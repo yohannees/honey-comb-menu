@@ -54,10 +54,11 @@ body {
 }
 
 #add {
-  font-size: 50px;
+  
+  font-size: 90px;
   color: #fff;
-  position: relative;
-  top: 20px;
+  position: center;
+  top: 100px;
   right: 10px;
   transition: 0.3s;
 }
@@ -89,7 +90,7 @@ body {
 }
 
 a > .material-icons {
-  color: #d2d2d2;
+  color: #020000;
 
   transition: 0.3s;
 }
