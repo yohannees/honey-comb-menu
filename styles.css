@@ -54,7 +54,7 @@ body {
 }
 
 #add {
-  font-size: 100px;
+  font-size: 50px;
   color: #fff;
   position: relative;
   top: 20px;
@@ -90,7 +90,7 @@ body {
 
 a > .material-icons {
   color: #d2d2d2;
-  font-size: 60px;
+
   transition: 0.3s;
 }
 
@@ -103,6 +103,8 @@ a {
   position: relative;
   top: 40px;
   left: 10px;
+  text-decoration:none;
+  font-size: 18px;
 }
 
 .one {
@@ -123,3 +125,4 @@ a {
 .six {
   transform: translate(-140px, -80px);
 }
+
