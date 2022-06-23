@@ -1,96 +1,125 @@
-body
-{
-    background-color: #333;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /*   box-sizing:border-box; */
+  font-family: "Source Sans Pro", "Poppins", sans-serif;
 }
-.container, .menu
-{
-   height: 100px;
-   width: 100px;
-   position: absolute;
-   margin: auto;
-   top: 20px;
-   bottom: 0;
-   left: 25px;
-   right: 0;
-   cursor: pointer;   
-}
-.menu
-{
-    z-index:-1;
-    transform:scale(0.9);
-}
-.toggle
-{
-    height: 0px;
-    width: 40px;
-    border-bottom: 30px solid #f90;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    position: absolute;
-    top: 0;
-}
-.toggle::before
-{
-    content: '';
-    position: absolute;
-    height: 0px;
-    width: 40px;
-    border-top: 30px solid #f90;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    top: 30px;
-    left: -15px;
-}
-.item
-{
-    height: 0px;
-    width: 40px;
-    border-bottom: 3px solid #fff;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    position: absolute;
-    top: 0;
-    transition: 1s;
-}
-.item::before
-{
-    content: '';
-    position: absolute;
-    height: 0px;
-    width: 40px;
-    border-top: 30px solid #fff;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    top: 20px;
-    left: -15px;
+body {
+  background: #333;
+  height: 100vh;
+  width: 100vw;
 }
 
-
-#add
-{
-    font-size: 2rem;
-    color:#fff;
-    position: absolute;
-    top: 12px;
-    transition: 1s;
+.container,
+.menu {
+  height: 140px;
+  width: 160px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
 }
 
-a>i
-{
-    color: #d2d2d2;
-    font-size: 1.2rem;
+.menu {
+  /*   z-index: -1; */
+  transform: scale(0.9);
 }
-a
-{
-    position: relative;
-    top: 20px;
-    left: 9px;
+
+.toggle {
+  height: 0;
+  width: 80px;
+  border-bottom: 70px solid #f9d230;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
-i:hover
-{
-    color: #ffc061;
-    transform: scale(1.3);
-    transition: 0.5s;
+
+.toggle:before {
+  content: "";
+  height: 0;
+  width: 80px;
+  border-top: 70px solid #f9d230;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 70px;
+  left: -40px;
+}
+
+#add {
+  font-size: 100px;
+  color: #fff;
+  position: relative;
+  top: 20px;
+  right: 10px;
+  transition: 0.3s;
+}
+#add:hover {
+  color: #e8b547;
+}
+
+.item {
+  height: 0;
+  width: 80px;
+  border-bottom: 70px solid #fff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 0;
+  transition: 0.4s;
+}
+
+.item:before {
+  content: "";
+  height: 0;
+  width: 80px;
+  border-top: 70px solid #fff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 70px;
+  left: -40px;
+}
+
+a > .material-icons {
+  color: #d2d2d2;
+  font-size: 60px;
+  transition: 0.3s;
+}
+
+a > .material-icons:hover {
+  color: #f9d230;
+  transform: scale(1.2);
+}
+
+a {
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.one {
+  transform: translateY(-160px);
+}
+.two {
+  transform: translate(140px, 80px);
+}
+.three {
+  transform: translate(140px, -80px);
+}
+.four {
+  transform: translateY(160px);
+}
+.five {
+  transform: translate(-140px, 80px);
+}
+.six {
+  transform: translate(-140px, -80px);
 }
